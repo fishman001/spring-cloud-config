@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: spring-cloud-web-admin-feign
+  thymeleaf:
+    cache: false
+    mode: LEGACYHTML5
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+
+server:
+  port: 8085
+
+eureka:
+  client:
+    service-url:
+      defaultZone:  http://localhost:8081/eureka/
+
+
+feign:
+  hystrix:
+    enabled: true
